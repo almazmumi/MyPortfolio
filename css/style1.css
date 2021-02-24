@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 40px;
+}
+
+.header>* {
+    padding-left: 1em;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.reach-out {
+    height: 20px;
+    display: inline-block;
+    padding-top: 2px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+
+.content {
+    padding: 100px;
+}
+
+.major {
+    font-weight: 400;
+}
+
+.about {
+    margin-top: 20px;
+    line-height: 20px;
+    max-width: 500px;
+}
+
+button {
+    border: 1px solid #0008;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 3px;
+    height: 36px;
+    margin-right: 7px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+button i {
+    margin-right: 10px;
+}
+
+
+
+
+.section-headers {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.section-headers h1 {
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+
+#projectsBtn.active,
+#blogsBtn.active {
+    color: #000;
+}
+
+#projectsBtn,
+#blogsBtn {
+    color: #00000041;
+}
+
+.project {
+    margin-top: 20px;
+    padding: 0;
+    border-bottom: 10px solid #00000012;
+    padding-bottom: 7px;
+    margin-top: 60px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .content {
+        padding: 50px;
+    }
+}
+
+
+
+.projects {
+    display: none;
+}
+
+.projects.active {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+.projects .project h2 {
+    font-weight: 400;
+}
+
+
+
+
+.skills {
+    display: flex;
+    margin-bottom: 19px;
+    flex-wrap: wrap;
+    line-height: 23px;
+    margin-bottom: 35px;
+}
+
+
+.skill {
+    margin-right: 13px;
+    color: #000;
+    border-bottom: 0.5px solid #00000014;
+    height: 20px;
+    font-weight: lighter;
+}
+
+
+
+.skills-icons {
+    margin-top: 20px;
+    display: flex;
+    /*! justify-content: center; */
+    flex-wrap: nowrap;
+    transform: scale(1);
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.skills-icons::-webkit-scrollbar {
+    display: none;
+}
+
+.skills-icons.active {
+    background: rgba(255, 255, 255, 0.3);
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    transform: scale(1.1);
+}
+
+.skill-icon {
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    user-select: none;
+}
+
+
+
+.blogs {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: none;
+}
+
+.blogs.active {
+    display: flex;
+}
+
+.ui.form label {
+    font-weight: 400 !important;
+}
+
+.ui.form .field {
+    margin-top: 40px;
+}
